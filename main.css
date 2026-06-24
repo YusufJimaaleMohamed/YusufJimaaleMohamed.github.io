@@ -2,14 +2,12 @@
     --bg: linear-gradient(135deg, #dbeafe, #ede9fe);
     --text: #111;
     --card: #fff;
-    --muted: rgba(0,0,0,0.6);
 }
 
 [data-theme="dark"] {
     --bg: linear-gradient(135deg, #2563eb, #7c3aed);
     --text: #fff;
     --card: rgba(0,0,0,0.55);
-    --muted: rgba(255,255,255,0.7);
 }
 
 body {
@@ -55,15 +53,8 @@ body {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
-    margin-top: 20px;
-}
-
-@media (max-width: 600px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 .contact-card {
@@ -74,12 +65,6 @@ body {
     color: var(--text);
     text-align: center;
     transition: 0.3s;
-}
-
-.contact-card i {
-    font-size: 24px;
-    display: block;
-    margin-bottom: 8px;
 }
 
 .contact-card:hover {
@@ -93,23 +78,75 @@ body {
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 
+
 #startscreen {
     position: fixed;
     inset: 0;
-    background: black;
+
+    background: radial-gradient(circle at center,
+    #2563eb,
+    #7c3aed,
+    #000
+    );
+
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: fadeOut 1s ease 3s forwards;
+    z-index: 9999;
+}
+
+#startscreen.hide {
+    animation: fadeOut 1s ease forwards;
+    pointer-events: none;
 }
 
 .name-container {
     display: flex;
-    gap: 10px;
-    font-size: 2rem;
-    font-weight: bold;
+    gap: 12px;
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: white;
+
+    text-shadow: 0 0 20px rgba(255,255,255,0.4);
+}
+
+.name-left {
+    color: #38bdf8;
+    text-shadow: 0 0 20px #38bdf8;
+    animation: pop 1s ease forwards;
+}
+
+.name-middle {
+    color: #a78bfa;
+    text-shadow: 0 0 20px #a78bfa;
+    animation: pop 1s ease 0.2s forwards;
+    opacity: 0;
+}
+
+.name-right {
+    color: #60a5fa;
+    text-shadow: 0 0 20px #60a5fa;
+    animation: pop 1s ease 0.4s forwards;
+    opacity: 0;
+}
+
+@keyframes pop {
+    from {
+        opacity: 0;
+        transform: scale(0.6) translateY(30px);
+        filter: blur(10px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+        filter: blur(0);
+    }
 }
 
 @keyframes fadeOut {
-    to { opacity: 0; visibility: hidden; }
+    to {
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(1.1);
+    }
 }

@@ -8,6 +8,9 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link href="main.css" rel="stylesheet">
 </head>
 
@@ -33,28 +36,13 @@
         <div class="collapse navbar-collapse" id="navMenu">
 
             <ul class="navbar-nav ms-auto text-center gap-2">
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">Over mij</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projecten</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="over.html">Over website</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="reflectie.html">Reflectie</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-
+                <li class="nav-item"><a class="nav-link" href="#about">Over mij</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projecten</a></li>
+                <li class="nav-item"><a class="nav-link" href="over.html">Over website</a></li>
+                <li class="nav-item"><a class="nav-link" href="reflectie.html">Reflectie</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
+
         </div>
 
         <button id="themeToggle" class="btn btn-sm ms-3">
@@ -65,41 +53,37 @@
 </nav>
 
 <section class="hero">
-    <div class="container text-center">
+    <div class="container text-center" data-aos="fade-up">
         <h1>Welkom op mijn Portfolio</h1>
         <p>Software Developer • MBO-4</p>
     </div>
 </section>
 
 <section id="about" class="section">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
         <h2>Over mij</h2>
 
+        <p>Ik ben Yusuf, ik maak websites en leer front-end development.</p>
+
         <p>
-            Ik ben Yusuf, een MBO-4 Software Developer student die graag websites bouwt.
-            Ik leer elke dag meer over front-end en design.
+            Ik hou van voetbal, mijn favoriete speler is <strong>Iniesta</strong>.
         </p>
 
         <p>
-            Ik hou van voetbal, mijn favoriete speler is <strong>Iniesta</strong> en ik hou van technische middenvelders.
+            Ik kijk anime zoals <strong>Dragon Ball Z</strong> en lees manhwa zoals
+            <strong>The Greatest Real Estate Developer</strong>.
         </p>
-
-        <p>
-            Ik kijk anime zoals <strong>Dragon Ball Z</strong> en de <strong>Broly movie</strong>.
-            Ook lees ik manhwa zoals <strong>The Greatest Real Estate Developer</strong>.
-        </p>
-
     </div>
 </section>
 
 <section id="projects" class="section">
     <div class="container">
 
-        <h2>Projecten</h2>
+        <h2 data-aos="fade-up">Projecten</h2>
 
         <div class="row g-4 mt-3">
 
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-3" data-aos="zoom-in">
                 <div class="project-card">
                     <img src="images/galge.png" class="project-img">
                     <h5>Galgje</h5>
@@ -107,7 +91,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-3" data-aos="zoom-in">
                 <div class="project-card">
                     <img src="images/planet.png" class="project-img">
                     <h5>Planeten Quiz</h5>
@@ -115,7 +99,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-3" data-aos="zoom-in">
                 <div class="project-card">
                     <img src="images/whack a mole.png" class="project-img">
                     <h5>Whack-a-Mole</h5>
@@ -123,7 +107,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-lg-3">
+            <div class="col-12 col-sm-6 col-lg-3" data-aos="zoom-in">
                 <div class="project-card">
                     <img src="images/portfolio.png" class="project-img">
                     <h5>Portfolio</h5>
@@ -132,33 +116,32 @@
             </div>
 
         </div>
-
     </div>
 </section>
 
 <section id="contact" class="section">
     <div class="container text-center">
 
-        <h2>Contact</h2>
+        <h2 data-aos="fade-up">Contact</h2>
 
         <div class="contact-grid mt-4">
 
-            <a href="mailto:302572580@student.rocmondriaan.nl" class="contact-card">
+            <a href="mailto:school@mail.com" class="contact-card" data-aos="fade-up">
                 <i class="bi bi-mortarboard"></i>
                 <p>School Email</p>
             </a>
 
-            <a href="mailto:yusufjimaale96@gmail.com" class="contact-card">
+            <a href="mailto:persoonlijk@mail.com" class="contact-card" data-aos="fade-up">
                 <i class="bi bi-envelope"></i>
                 <p>Persoonlijk</p>
             </a>
 
-            <a href="https://github.com/YusufJimaaleMohamed" class="contact-card">
+            <a href="https://github.com" class="contact-card" data-aos="fade-up">
                 <i class="bi bi-github"></i>
                 <p>GitHub</p>
             </a>
 
-            <a href="https://www.linkedin.com/" class="contact-card">
+            <a href="https://linkedin.com" class="contact-card" data-aos="fade-up">
                 <i class="bi bi-linkedin"></i>
                 <p>LinkedIn</p>
             </a>
@@ -172,8 +155,9 @@
     © 2026 Yusuf Mohamed
 </footer>
 
-<script src="main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="main.js"></script>
 
 </body>
 </html>
