@@ -23,23 +23,33 @@
 
 <nav class="navbar navbar-expand-lg fixed-top nav-blur">
     <div class="container">
+
         <a class="navbar-brand fw-bold" href="#">Yusuf</a>
 
-        <ul class="navbar-nav ms-auto d-flex flex-row gap-3">
-            <li><a class="nav-link" href="#about">Over mij</a></li>
-            <li><a class="nav-link" href="#projects">Projecten</a></li>
-            <li><a class="nav-link" href="over.html">Over website</a></li>
-            <li><a class="nav-link" href="reflectie.html">Reflectie</a></li>
-            <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+            <i class="bi bi-list"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="nav">
+            <ul class="navbar-nav ms-auto gap-2 text-center">
+
+                <li><a class="nav-link" href="#about">Over mij</a></li>
+                <li><a class="nav-link" href="#projects">Projecten</a></li>
+                <li><a class="nav-link" href="over.html">Over website</a></li>
+                <li><a class="nav-link" href="reflectie.html">Reflectie</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+
+            </ul>
+        </div>
 
         <button id="themeToggle" class="btn btn-sm ms-3">
             <i class="bi bi-moon-stars"></i>
         </button>
+
     </div>
 </nav>
 
-<section class="hero d-flex align-items-center text-center">
+<section class="hero">
     <div class="container">
         <h1>Welkom op mijn Portfolio</h1>
         <p>Software Developer • MBO-4</p>
@@ -51,22 +61,18 @@
         <h2>Over mij</h2>
 
         <p>
-            Ik ben Yusuf, een MBO-4 Software Developer student die graag websites en kleine projecten bouwt.
-            Ik vind het leuk om te leren hoe dingen werken achter websites en games.
+            Ik ben Yusuf, een MBO-4 Software Developer student die websites en kleine projecten bouwt.
+            Ik leer elke dag meer over frontend en backend development.
         </p>
 
         <p>
-            In mijn vrije tijd hou ik van voetbal. Mijn favoriete spelers zijn Spaanse spelers zoals
-            <strong>Iniesta</strong> en andere technische middenvelders.
+            In mijn vrije tijd hou ik van voetbal. Mijn favoriete speler is <strong>Iniesta</strong>.
+            Ik kijk ook anime zoals <strong>Dragon Ball Z</strong> en de <strong>Broly movie</strong>.
         </p>
 
         <p>
-            Ik kijk ook veel anime, vooral <strong>Dragon Ball Z</strong> en de <strong>Broly movie</strong>.
-            Daarnaast lees ik manhwa zoals <strong>The Greatest Real Estate Developer</strong>.
-        </p>
-
-        <p>
-            Mijn doel is om steeds beter te worden in front-end en later full-stack developer te worden.
+            Ik lees ook manhwa zoals <strong>The Greatest Real Estate Developer</strong>.
+            Mijn doel is om een full-stack developer te worden.
         </p>
     </div>
 </section>
@@ -76,71 +82,70 @@
 
         <h2>Projecten</h2>
 
-        <div class="row g-4 mt-3">
+        <div class="project-grid mt-4">
 
-            <div class="col-md-4">
-                <div class="project-card">
-                    <img src="images/galge.png" class="project-img">
-                    <h5>Galgje</h5>
-                    <a href="galge.html" class="btn btn-primary w-100">Bekijk</a>
-                </div>
+            <div class="project-card">
+                <img src="images/galge.png" class="project-img">
+                <h5>Galgje</h5>
+                <a href="galge.html" class="btn btn-primary w-100">Bekijk</a>
             </div>
 
-            <div class="col-md-4">
-                <div class="project-card">
-                    <img src="images/planet.png" class="project-img">
-                    <h5>Planeten Quiz</h5>
-                    <a href="Planeten.html" class="btn btn-primary w-100">Bekijk</a>
-                </div>
+            <div class="project-card">
+                <img src="images/planet.png" class="project-img">
+                <h5>Planeten Quiz</h5>
+                <a href="Planeten.html" class="btn btn-primary w-100">Bekijk</a>
             </div>
 
-            <div class="col-md-4">
-                <div class="project-card">
-                    <img src="images/whack a mole.png" class="project-img">
-                    <h5>Whack-a-Mole</h5>
-                    <a href="whack.html" class="btn btn-primary w-100">Bekijk</a>
-                </div>
+            <div class="project-card">
+                <img src="images/whack a mole.png" class="project-img">
+                <h5>Whack-a-Mole</h5>
+                <a href="whack.html" class="btn btn-primary w-100">Bekijk</a>
             </div>
 
-            <div class="col-md-4">
-                <div class="project-card">
-                    <img src="images/portfolio.png" class="project-img">
-                    <h5>Portfolio Website</h5>
-                    <a href="portfolio.html" class="btn btn-primary w-100">Bekijk</a>
-                </div>
+            <div class="project-card">
+                <img src="images/portfolio.png" class="project-img">
+                <h5>Portfolio Website</h5>
+                <a href="portfolio.html" class="btn btn-primary w-100">Bekijk</a>
             </div>
 
         </div>
+
     </div>
 </section>
 
-<section id="contact" class="section text-center">
-    <div class="container">
+<section id="contact" class="section">
+    <div class="container text-center">
+
         <h2>Contact</h2>
 
-        <div class="d-flex flex-column align-items-center gap-2">
+        <div class="contact-grid mt-4">
 
-            <a class="btn btn-success w-50" href="mailto:302572580@student.rocmondriaan.nl">
+            <a class="contact-card" href="mailto:school@mail.com">
+                <i class="bi bi-mortarboard"></i>
                 School Email
             </a>
 
-            <a class="btn btn-success w-50" href="mailto:yusufjimaale96@gmail.com">
-                Persoonlijke Email
+            <a class="contact-card" href="mailto:personal@mail.com">
+                <i class="bi bi-envelope"></i>
+                Persoonlijk
             </a>
 
-            <a class="btn btn-dark w-50" href="https://github.com/YusufJimaaleMohamed">
+            <a class="contact-card" href="https://github.com">
+                <i class="bi bi-github"></i>
                 GitHub
             </a>
 
-            <a class="btn btn-primary w-50" href="https://www.linkedin.com/in/yusuf-j-mohamed-13ab54341/">
+            <a class="contact-card" href="https://linkedin.com">
+                <i class="bi bi-linkedin"></i>
                 LinkedIn
             </a>
 
         </div>
+
     </div>
 </section>
 
-<footer class="site-footer text-center py-3 mt-5">
+<footer class="site-footer">
     © 2026 Yusuf Mohamed
 </footer>
 
