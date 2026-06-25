@@ -33,22 +33,38 @@ body {
     background: rgba(0,0,0,0.25);
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .project-card {
     background: var(--card);
     border-radius: 16px;
     padding: 12px;
     transition: 0.3s;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
 }
 
 .project-card:hover {
     transform: translateY(-6px);
 }
 
+
 .project-img {
     width: 100%;
-    height: 180px;
+    max-width: 240px;
+    height: 150px;
     object-fit: cover;
+
     border-radius: 12px;
+    margin: 0 auto;
 }
 
 .contact-grid {
@@ -71,13 +87,41 @@ body {
     transform: translateY(-5px);
 }
 
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 16px;
+    background: var(--card);
+    color: var(--text);
+
+    text-decoration: none;
+    font-weight: 600;
+
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(10px);
+    z-index: 999;
+
+    transition: 0.25s ease;
+}
+
+.back-btn:hover {
+    transform: translateX(-6px);
+}
+
 .site-footer {
     text-align: center;
     padding: 20px;
     opacity: 0.7;
     border-top: 1px solid rgba(255,255,255,0.1);
 }
-
 
 #startscreen {
     position: fixed;
@@ -106,26 +150,22 @@ body {
     font-size: 2.4rem;
     font-weight: 800;
     color: white;
-
     text-shadow: 0 0 20px rgba(255,255,255,0.4);
 }
 
 .name-left {
     color: #38bdf8;
-    text-shadow: 0 0 20px #38bdf8;
     animation: pop 1s ease forwards;
 }
 
 .name-middle {
     color: #a78bfa;
-    text-shadow: 0 0 20px #a78bfa;
     animation: pop 1s ease 0.2s forwards;
     opacity: 0;
 }
 
 .name-right {
     color: #60a5fa;
-    text-shadow: 0 0 20px #60a5fa;
     animation: pop 1s ease 0.4s forwards;
     opacity: 0;
 }
@@ -134,12 +174,10 @@ body {
     from {
         opacity: 0;
         transform: scale(0.6) translateY(30px);
-        filter: blur(10px);
     }
     to {
         opacity: 1;
         transform: scale(1) translateY(0);
-        filter: blur(0);
     }
 }
 
@@ -148,5 +186,16 @@ body {
         opacity: 0;
         visibility: hidden;
         transform: scale(1.1);
+    }
+}
+
+@media (max-width: 600px) {
+    .project-img {
+        max-width: 100%;
+        height: 140px;
+    }
+
+    .name-container {
+        font-size: 1.8rem;
     }
 }

@@ -8,7 +8,6 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link href="main.css" rel="stylesheet">
@@ -65,14 +64,7 @@
 
         <p>Ik ben Yusuf, ik maak websites en leer front-end development.</p>
 
-        <p>
-            Ik hou van voetbal, mijn favoriete speler is <strong>Iniesta</strong>.
-        </p>
-
-        <p>
-            Ik kijk anime zoals <strong>Dragon Ball Z</strong> en lees manhwa zoals
-            <strong>The Greatest Real Estate Developer</strong>.
-        </p>
+        <p>Ik hou van voetbal en anime.</p>
     </div>
 </section>
 
@@ -157,7 +149,23 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="main.js"></script>
+
+<script>
+    AOS.init({ duration: 800, once: true });
+
+    setTimeout(() => {
+        document.getElementById("startscreen").classList.add("hide");
+    }, 2500);
+
+    const btn = document.getElementById("themeToggle");
+    const html = document.documentElement;
+
+    btn?.addEventListener("click", () => {
+        const current = html.getAttribute("data-theme");
+        const next = current === "dark" ? "light" : "dark";
+        html.setAttribute("data-theme", next);
+    });
+</script>
 
 </body>
 </html>
