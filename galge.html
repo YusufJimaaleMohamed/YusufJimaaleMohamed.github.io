@@ -2,33 +2,107 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <title>Galgje</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Galgje | Yusuf Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="main.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="project-body">
 
-<a href="index.html" class="back-btn">← Terug naar Portfolio</a>
+<nav class="project-nav">
+  <div class="container d-flex justify-content-between align-items-center">
+    <strong>Yusuf Portfolio</strong>
 
-<h1>Galgje Game</h1>
+    <a href="index.html">← Terug</a>
+  </div>
+</nav>
 
-<p>Een game waar je woorden moet raden met JavaScript.</p>
+<section class="project-detail">
 
-<img src="images/galge.png">
+  <div class="container">
 
-<h3>Technieken</h3>
-<ul>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>JavaScript</li>
-</ul>
+    <div class="project-title">
+      <h1>Galgje</h1>
+      <p>Een JavaScript woordspel waarbij de speler het juiste woord moet raden.</p>
+    </div>
 
-<h3>Wat heb ik geleerd?</h3>
-<ul>
-  <li>DOM manipulatie</li>
-  <li>Arrays</li>
-  <li>Logica bouwen</li>
-</ul>
+    <div class="project-showcase">
+
+      <img src="images/galge.png" class="project-detail-img" alt="Galgje">
+
+      <div class="project-text">
+
+        <h2>Over het project</h2>
+
+        <p>
+          Voor dit project heb ik een Galgje-spel gemaakt met HTML, CSS en JavaScript.
+          De speler moet letters raden totdat het woord compleet is.
+          Bij elke verkeerde letter verlies je een kans.
+        </p>
+
+        <h4>Technieken</h4>
+
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+
+        <h4>Wat heb ik geleerd?</h4>
+
+        <ul>
+          <li>DOM manipulatie</li>
+          <li>Events gebruiken</li>
+          <li>Arrays toepassen</li>
+          <li>Game logica bouwen</li>
+        </ul>
+
+        <a href="https://github.com/YusufJimaaleMohamed" target="_blank" class="github-btn">
+          Bekijk GitHub
+        </a>
+
+      </div>
+
+    </div>
+
+    <h2 class="project-info-title">
+      Projectinformatie
+    </h2>
+
+    <div class="project-info-grid">
+
+      <div class="info-box">
+        <h3>2026</h3>
+        <p>Jaar</p>
+      </div>
+
+      <div class="info-box">
+        <h3>HTML</h3>
+        <p>Structuur</p>
+      </div>
+
+      <div class="info-box">
+        <h3>CSS</h3>
+        <p>Styling</p>
+      </div>
+
+      <div class="info-box">
+        <h3>JS</h3>
+        <p>Functionaliteit</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer class="project-footer">
+  © 2026 Yusuf Mohamed
+</footer>
 
 </body>
 </html>

@@ -26,7 +26,7 @@
 <nav class="navbar navbar-expand-lg fixed-top nav-blur">
     <div class="container">
 
-        <a class="navbar-brand fw-bold" href="#">Yusuf</a>
+        <a class="navbar-brand fw-bold" href="index.html">Yusuf</a>
 
         <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
             <i class="bi bi-list"></i>
@@ -42,29 +42,45 @@
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
 
-        </div>
+            <button id="themeToggle" class="btn btn-sm ms-lg-3 mt-3 mt-lg-0">
+                <i class="bi bi-moon-stars"></i>
+            </button>
 
-        <button id="themeToggle" class="btn btn-sm ms-3">
-            <i class="bi bi-moon-stars"></i>
-        </button>
+        </div>
 
     </div>
 </nav>
 
-<section class="hero">
+<section id="hero" class="hero">
     <div class="container text-center" data-aos="fade-up">
-        <h1>Welkom op mijn Portfolio</h1>
-        <p>Software Developer • MBO-4</p>
+        <h1 class="multi-welcome">
+            <span id="welcomeText"></span>
+        </h1>
+        <p class="lead">Ik ben Yusuf • Software Developer in opleiding</p>
     </div>
 </section>
 
 <section id="about" class="section">
     <div class="container" data-aos="fade-up">
+
         <h2>Over mij</h2>
 
-        <p>Ik ben Yusuf, ik maak websites en leer front-end development.</p>
+        <p>
+            Mijn naam is <strong>Yusuf Mohamed</strong>. Naast programmeren heb ik verschillende hobby's waar ik veel plezier uit haal. In mijn vrije tijd ben ik vaak bezig met anime, voetbal en het lezen van manhwa.
+        </p>
 
-        <p>Ik hou van voetbal en anime.</p>
+        <p>
+            Mijn favoriete anime is <strong>Dragon Ball Z</strong> en mijn favoriete personage is <strong>Broly</strong>. Ik vind vooral de actie en de ontwikkeling van de personages interessant. Daarnaast lees ik graag manhwa. Mijn favoriete personage is <strong>Lloyd Frontera</strong> uit <strong>The Greatest Real Estate Developer</strong>. Zijn humor en slimme manier van problemen oplossen maken hem voor mij een van de leukste personages.
+        </p>
+
+        <p>
+            Ook ben ik een grote voetballiefhebber. Op dit moment is <strong>Manchester City</strong> mijn favoriete club. Mijn favoriete speler is <strong>Kevin De Bruyne</strong> vanwege zijn passing, inzicht en creativiteit. Andere spelers die ik bewonder zijn <strong>Xavi</strong>, <strong>Andrés Iniesta</strong>, <strong>Kaká</strong>, <strong>Mesut Özil</strong> en <strong>Eden Hazard</strong>. Zij inspireren mij door hun techniek, spelinzicht en manier van spelen.
+        </p>
+
+        <p>
+            Naast mijn hobby's blijf ik graag nieuwe dingen leren. Ik vind het leuk om mezelf uit te dagen met nieuwe projecten en mijn programmeervaardigheden steeds verder te verbeteren. Mijn doel is om mij te blijven ontwikkelen tot een goede software developer en in de toekomst nog grotere en uitdagendere applicaties te bouwen.
+        </p>
+
     </div>
 </section>
 
@@ -75,73 +91,98 @@
 
         <div class="row g-4 mt-3">
 
-            <div class="col-12 col-sm-6 col-lg-3" data-aos="zoom-in">
+            <div class="col-12 col-sm-6 col-lg-3">
                 <div class="project-card">
-                    <img src="images/galge.png" class="project-img">
-                    <h5>Galgje</h5>
-                    <a href="galge.html" class="btn btn-primary w-100">Bekijk</a>
+                    <img src="images/mon-in.png" class="project-img" alt="Mon">
+                    <h5>Mon</h5>
+                    <p>C# Desktop Applicatie</p>
+                    <a href="mon.html" class="btn btn-primary w-100">
+                        Bekijk
+                    </a>
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-lg-3" data-aos="zoom-in">
+            <div class="col-12 col-sm-6 col-lg-3">
                 <div class="project-card">
-                    <img src="images/planet.png" class="project-img">
+                    <img src="images/planet.png" class="project-img" alt="Planeten Quiz">
                     <h5>Planeten Quiz</h5>
-                    <a href="Planeten.html" class="btn btn-primary w-100">Bekijk</a>
+                    <p>JavaScript Quiz</p>
+                    <a href="Planeten.html" class="btn btn-primary w-100">
+                        Bekijk
+                    </a>
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-lg-3" data-aos="zoom-in">
+            <div class="col-12 col-sm-6 col-lg-3">
                 <div class="project-card">
-                    <img src="images/whack a mole.png" class="project-img">
+                    <img src="images/Whack-a-Mole.png" class="project-img" alt="Whack-a-Mole">
                     <h5>Whack-a-Mole</h5>
-                    <a href="whack.html" class="btn btn-primary w-100">Bekijk</a>
+                    <p>JavaScript Game</p>
+                    <a href="whack.html" class="btn btn-primary w-100">
+                        Bekijk
+                    </a>
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-lg-3" data-aos="zoom-in">
+            <div class="col-12 col-sm-6 col-lg-3">
                 <div class="project-card">
-                    <img src="images/portfolio.png" class="project-img">
-                    <h5>Portfolio</h5>
-                    <a href="portfolio.html" class="btn btn-primary w-100">Bekijk</a>
+                    <img src="images/collectables.png" class="project-img" alt="Collectables">
+                    <h5>Collectables</h5>
+                    <p>PHP & MySQL Website</p>
+                    <a href="collectables.html" class="btn btn-primary w-100">
+                        Bekijk
+                    </a>
                 </div>
             </div>
 
         </div>
-    </div>
 </section>
 
-<section id="contact" class="section">
+    <section id="contact" class="section">
     <div class="container text-center">
 
         <h2 data-aos="fade-up">Contact</h2>
 
         <div class="contact-grid mt-4">
 
-            <a href="mailto:school@mail.com" class="contact-card" data-aos="fade-up">
-                <i class="bi bi-mortarboard"></i>
-                <p>School Email</p>
+            <a href="mailto:302872580@student.rocmondriaan.nl"
+               class="contact-card"
+               data-aos="fade-up">
+
+                <i class="bi bi-mortarboard-fill"></i>
+
+                <h5>School Email</h5>
+
             </a>
 
-            <a href="mailto:persoonlijk@mail.com" class="contact-card" data-aos="fade-up">
-                <i class="bi bi-envelope"></i>
-                <p>Persoonlijk</p>
+            <a href="contact.html"
+               class="contact-card"
+               data-aos="fade-up"
+               data-aos-delay="100">
+
+                <i class="bi bi-send-fill"></i>
+
+                <h5>Stuur mij een bericht</h5>
+
             </a>
 
-            <a href="https://github.com" class="contact-card" data-aos="fade-up">
+            <a href="https://github.com/YusufJimaaleMohamed"
+               target="_blank"
+               class="contact-card"
+               data-aos="fade-up"
+               data-aos-delay="200">
+
                 <i class="bi bi-github"></i>
-                <p>GitHub</p>
-            </a>
 
-            <a href="https://linkedin.com" class="contact-card" data-aos="fade-up">
-                <i class="bi bi-linkedin"></i>
-                <p>LinkedIn</p>
+                <h5>GitHub</h5>
+
             </a>
 
         </div>
 
     </div>
 </section>
+
 
 <footer class="site-footer">
     © 2026 Yusuf Mohamed
@@ -149,23 +190,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<script>
-    AOS.init({ duration: 800, once: true });
-
-    setTimeout(() => {
-        document.getElementById("startscreen").classList.add("hide");
-    }, 2500);
-
-    const btn = document.getElementById("themeToggle");
-    const html = document.documentElement;
-
-    btn?.addEventListener("click", () => {
-        const current = html.getAttribute("data-theme");
-        const next = current === "dark" ? "light" : "dark";
-        html.setAttribute("data-theme", next);
-    });
-</script>
+<script src="main.js"></script>
 
 </body>
 </html>

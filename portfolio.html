@@ -2,40 +2,96 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Portfolio Project</title>
+  <title>Portfolio Website | Yusuf Portfolio</title>
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="main.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="project-body">
 
-<a href="index.html" class="back-btn">← Terug naar Portfolio</a>
+<nav class="project-nav">
+  <div class="container d-flex justify-content-between align-items-center">
+    <strong>Yusuf Portfolio</strong>
+    <a href="index.html">← Terug</a>
+  </div>
+</nav>
 
-<h1>Portfolio Website</h1>
+<section class="project-detail">
+  <div class="container">
 
-<p>
-  Dit is mijn eigen portfolio website waar ik mijn projecten laat zien.
-</p>
+    <div class="project-title">
+      <h1>Portfolio Website</h1>
+      <p>Mijn eigen website waar ik mijn projecten laat zien.</p>
+    </div>
 
-<img src="images/portfolio.png" class="project-img">
+    <div class="project-showcase">
 
-<h3>Technieken</h3>
-<ul>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>JavaScript</li>
-  <li>Bootstrap</li>
-</ul>
+      <img src="images/portfolio.png" class="project-detail-img" alt="Portfolio Website">
 
-<h3>Wat heb ik geleerd?</h3>
-<ul>
-  <li>Websites bouwen</li>
-  <li>Responsive design</li>
-  <li>Project structuur</li>
-  <li>Design verbeteren</li>
-</ul>
+      <div class="project-text">
+        <h2>Over het project</h2>
+
+        <p>
+          Dit is mijn eigen portfolio website. Op deze website laat ik mijn projecten zien,
+          vertel ik iets over mezelf en kunnen mensen contact met mij opnemen.
+        </p>
+
+        <h4>Technieken</h4>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Bootstrap</li>
+        </ul>
+
+        <h4>Wat heb ik geleerd?</h4>
+        <ul>
+          <li>Websites bouwen</li>
+          <li>Responsive design maken</li>
+          <li>Project structuur verbeteren</li>
+          <li>Design verbeteren</li>
+        </ul>
+
+        <a href="https://github.com/YusufJimaaleMohamed/YusufJimaaleMohamed.github.io" target="_blank" class="github-btn">
+          Bekijk GitHub
+        </a>
+      </div>
+
+    </div>
+
+    <h2 class="project-info-title">Projectinformatie</h2>
+
+    <div class="project-info-grid">
+      <div class="info-box">
+        <h3>2026</h3>
+        <p>Jaar</p>
+      </div>
+
+      <div class="info-box">
+        <h3>HTML</h3>
+        <p>Structuur</p>
+      </div>
+
+      <div class="info-box">
+        <h3>CSS</h3>
+        <p>Styling</p>
+      </div>
+
+      <div class="info-box">
+        <h3>JS</h3>
+        <p>Functionaliteit</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="project-footer">
+  © 2026 Yusuf Mohamed
+</footer>
 
 </body>
 </html>
